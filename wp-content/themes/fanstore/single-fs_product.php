@@ -8,7 +8,7 @@
                 <!-- Display the Title -->
                 <h1 class="post-title"><?php the_title(); ?></h1>
                 <!-- Display Short Description -->
-                <p><?= get_post_meta(get_the_ID(), '_short_description', true) ?></p>
+                <p><?= get_post_meta(get_the_ID(), 'short_description', true) ?></p>
                 <!-- Display the Featured Image -->
                 <?php if (has_post_thumbnail()) : ?>
                     <div class="post-thumbnail">
