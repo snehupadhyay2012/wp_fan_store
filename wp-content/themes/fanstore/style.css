@@ -16,8 +16,14 @@ Version: 1.0
     --text-color: #ffffff;
 }
 
+.theme_dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 body {
     font-family: sans-serif;
+    margin:0px;
 }
 
 .color-switcher {
@@ -53,7 +59,7 @@ main{
 .fs_header .fs_nav .fs_menu_container{
     float:right;
 }
-.fs_header .fs_nav .fs_menu_container .menu-fs-menu-container, .fs_header .fs_nav .fs_menu_container .color-switcher{
+.fs_header .fs_nav .fs_menu_container > div, .fs_header .fs_nav .fs_menu_container .color-switcher{
     display: inline-block;
 }
 
@@ -128,4 +134,24 @@ main{
 .fs_slider_container .fs_post_thumbnail img{
     height: 550px !important;
     object-fit: contain;
+}
+
+.text-image-block {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.text-image-block .block-image{
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+}
+
+.text-image-block .block-text {
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
 }

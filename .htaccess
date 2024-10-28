@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /fan-store/
+RewriteBase /wp_fan_store/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /fan-store/index.php [L]
+RewriteRule . /wp_fan_store/index.php [L]
 </IfModule>
 
 # END WordPress

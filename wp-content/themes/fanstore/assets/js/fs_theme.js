@@ -10,8 +10,8 @@ jQuery(window).load(function() {
             controlsContainer: ".flexslider",
     });
 
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    jQuery('html').attr('data-theme', currentTheme);
+    //const currentTheme = localStorage.getItem('theme') || 'light';
+    //jQuery('html').attr('data-theme', currentTheme);
 
     jQuery('#theme-icon').attr(
         'class', 

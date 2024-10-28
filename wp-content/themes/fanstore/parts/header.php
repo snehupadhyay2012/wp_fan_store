@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<?php 
+    $theme = get_field('theme_color');
+?>
+<html <?php language_attributes(); ?> data-theme="<?= ($theme == 'dark') ? 'dark' : 'light'; ?>">
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,9 +34,9 @@
                 </div>
                 <div class="fs_menu_container">
                     <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?> <!-- Showing Primary Menu -->
-                    <div class="color-switcher"> <!-- Theme Color Switch Icon -->
+                    <!--div class="color-switcher">
                         <i id="theme-icon" class="fas fa-moon"></i>
-                    </div>
+                    </div-->
                 </div>
             </nav>
         </header>
